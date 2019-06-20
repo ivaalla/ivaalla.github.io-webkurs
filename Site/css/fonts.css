@@ -1,0 +1,18 @@
+ .for_header {
+               font-weight : bold;
+               font-family: Monotype Corsiva; 
+               color: red;
+               font-size: 300%;
+               text-align: center; 
+              }
+ h1 {text-align:center; 
+            font-size: 150%; 
+            font-family: Verdana, Arial, Helvetica, sans-serif; 
+            color: #00f
+           }
+      
+p {
+          font-size: 110%; 
+          font-family: Arial; 
+          text-align: justify;
+          }
