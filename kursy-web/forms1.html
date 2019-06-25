@@ -1,0 +1,119 @@
+<html>
+
+<head>
+
+  <title>Форма опитування</title>
+  <style>
+	
+
+  #my_form {
+    background-color:#00ffaa;
+    width:470px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 7px solid #757f3f;
+    position:relative;
+  }
+
+  #my_form h1 {
+    font-size:42px;
+    color:#757f3f;
+    text-align: center;
+  }
+  #my_form h2 {
+    font-size:18px;
+    font-style:italic;
+    font-weight:bold;
+    color:#227722;
+    text-align: center;
+  }
+  #my_form h3 {  
+    font-size:16px;
+    color:#002200;
+    text-align: left;  
+  }
+
+
+  #my_form textarea,
+  #my_form select
+  {
+    font-size:15px;
+    width:400px;
+  }
+ 
+
+  #my_form textarea {
+    height:150px;
+    resize: none;
+  }
+
+  #my_form .zirochka {
+      color:#f00;    
+  }
+
+  #my_form #my_button {
+    width: 100px;
+    color: #fff;
+    border:none;
+    display:block;
+    float:right;
+    margin-top:20px;
+    margin-right:6px;
+    background-color:#005500;
+    -moz-border-radius:8px;
+  }
+
+  </style>
+</head>
+
+<body>
+<div id="my_form" >
+
+    <h1>Опитування</h1>
+    <h2>Дайте відповіді на запитання анкети :)</h2>
+   
+    
+    <form method="post" action="mailto:nadiya@ukr.net">
+        <h3>Прізвище, ім'я <span class="zirochka">*</span></h3>
+        <input type="text"  name="name" value="" placeholder="Вкажи прізвище, ім'я" zirochka="zirochka" autofocus="autofocus" />
+        
+ 	<h3>Стать <span class="zirochka">*</span></h3>
+         Жінка <input type = "radio" name = "sex" value ="female"/>
+         Чоловік <input type = "radio" name = "sex" value ="male" checked/>
+ 	
+	<h3>Які супермаркети вивідвідуєте? <span class="zirochka">*</span></h3>
+		<input type = "checkbox" name = "market" />"Рукавичка"<br>
+		<input type = "checkbox" name = "market" />"АТБ"<br>
+		<input type = "checkbox" name = "market" />"Близенько"<br> 
+		<input type = "checkbox" name = "market" />"Сільпо"<br>  
+		<input type = "checkbox" name = "market" />"Метро"<br>
+
+	<h3>Ваше заняття</h3>
+        <select  name="zanyattya">
+            <option>учень (учениця)</option>
+            <option>студент (студентка)</option>
+            <option>працюючий (працююча)</option>
+            <option>безробітний (безробітна)</option>
+            <option>пенсіонер (пенсіонерка)</option>
+        </select>
+
+	<h3>Eлектронна пошта<span class="zirochka">*</span></h3>
+        <input type="email"  name="email"  placeholder="name@ukr.net" zirochka="zirochka" />
+        
+	<h3> Телефон</h3>
+        <input type="tel"  name="telephone"  />
+	<h3> Дата народження</h3>
+		<input type="month"> </p>
+
+	<h3>Оцініть обслуговування<span class="zirochka">*</span></h3>
+		<input type="range"  name="range" value="10" />
+    <h3>Ваші пропозиції щодо поліпшення обслуговування<span class="zirochka">*</span></h3>
+        <textarea  name="propozycii" placeholder="У повідомленні має бути більше, ніж 20 символів" zirochka="zirochka" data-minlength="20"></textarea>
+  
+		<input type="submit" value="Надіслати" id="my_button" />
+        <input type="reset"  value="Очистити"  id="my_button" />
+        <p><span class="zirochka">*</span> Поля, обов'язкові для заповнення </p>
+    </form>
+</div>
+</body>
+</html>
