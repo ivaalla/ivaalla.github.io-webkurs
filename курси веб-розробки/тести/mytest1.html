@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>  Тест 1 </title>
+  <script>
+   function perevirka(test)
+    {
+    var i=0;
+    if (test.a1[1].checked) {i++;} 
+    if (test.a2[0].checked) {i++;}
+    if (test.a3[2].checked) {i++;}
+	if (test.a4[0].checked) {i++;}
+    if (test.a5[0].checked) {i++;}
+    if (test.a5[1].checked) {i++;}
+    document.test.druk.value=i;
+  }
+  </script>
+<head>
+<body>
+
+  <hr size="7" color="green" width="400" align="center">
+    <h1 align="center">Тестування</h1>
+  <hr size="7" color="red" width="300" align="center">
+
+ <form method ="post" name="test">
+   
+    <h2>2+2=? </h2>
+   <input type ="radio" name="a1"> 5 <br> 
+   <input type ="radio" name="a1"> 4 <br>
+   <input type ="radio" name="a1"> 3
+      <h2>3+3=? </h2>
+   <input type ="radio" name="a2" > 6<br>
+   <input type ="radio" name="a2"> 5<br>
+   <input type ="radio" name="a2" > 7 
+    <h2>4+4=? </h2>
+   <input type ="radio" name="a3" > 7 <br>
+   <input type ="radio" name="a3" > 9 <br>
+   <input type ="radio" name="a3" > 8<br>
+   
+<h2>Теги H1...H6 використовують для </h2>
+
+<input type="radio" name="a4" > 
+Позначення нового абзацу <br>
+
+<input type="radio" name="a4" > 
+Позначення тексту як заголовка <br>
+
+<input type="radio" name="a4"> 
+Позначення заголовка для таблиці <br><br>
+
+<h2>Атрибути - це </h2>
+
+<input type="checkbox" name="a5" >
+Додаткові ключові слова, відокремлені один від одного та від основного ключового слова тегу пробілом <br>
+
+<input type="checkbox" name="a5"> 
+Характеристика тегу, що впливає на створюваний ним ефект <br>
+<input type="checkbox" name="a5"> 
+Властивість тегу <br>
+
+<input type="checkbox" name="a5"> 
+ Характеристика кольорів тексту веб-сторінки <br><br>
+
+<input name="check" onclick="perevirka(this.form)"
+type="button" value="Кількість правильних відповідей">
+<textarea cols="5" name="druk" rows="1"> </textarea>
+<input type="reset"   value="Оновити форму">
+</form>
+</body>
+</html>
+
+
+
